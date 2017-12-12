@@ -1,0 +1,24 @@
+.Tweeling {
+  width: 40vw;
+  height: 45vh;
+  display: grid;
+  grid-template-columns: 16vw 24vw;
+  grid-template-rows: 45vh;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); }
+  .Tweeling .result {
+    grid-column: 1/2;
+    background: linear-gradient(75deg, #00E39F, #00C4E1); }
+  .Tweeling .tweets {
+    grid-column: 2/3;
+    background-color: #FFF;
+    padding: 0 10px;
+    overflow-y: scroll;
+    min-height: 45vh; }
+    .Tweeling .tweets .tweet {
+      width: 100%;
+      border-bottom: solid 1px #ddd;
+      height: 9vh; }
+
+/*# sourceMappingURL=tweeling.component.css.map */

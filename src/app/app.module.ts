@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TweelingComponent } from './tweeling/tweeling.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TweelingComponent
   ],
   imports: [
     BrowserModule
