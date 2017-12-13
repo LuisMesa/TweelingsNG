@@ -1,29 +1,35 @@
 $openWidth : 40vw
-$closeWidth : 15vw
+$closeWidth : 20vw
 $height: 45vh
 
 .Tweeling
-  width: $openWidth
   height: $height
   display: grid
-  grid-template-columns: $openWidth*2/5 $openWidth*3/5
-  grid-template-rows: $height
   border-radius: 4px
   overflow: hidden
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2)
-
-  .result
-    grid-column: 1/2
-    background: linear-gradient(75deg, #00E39F, #00C4E1)
-
   .tweets
-    grid-column: 2/3
     background-color: #FFF
     padding: 0 10px
     overflow-y: scroll
     min-height: $height
 
-    .tweet
-      width: 100%
-      border-bottom: solid 1px #ddd
-      height: $height/5
+.Tweeling.open
+  $width: $openWidth
+  width: $width
+  grid-template-columns: $width*2/5 $width*3/5
+  grid-template-rows: $height
+  .result
+    grid-column: 1/2
+    background: linear-gradient(75deg, #00E39F, #00C4E1)
+  .tweets
+    grid-column: 2/3
+
+.Tweeling.close
+  $width: $closeWidth
+  width: $width
+  grid-template-columns: $width
+  grid-template-rows: $height
+  .result
+    grid-column: 1/2
+    background: linear-gradient(75deg, #00E39F, #00C4E1)

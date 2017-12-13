@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tweeling.component.css']
 })
 export class TweelingComponent implements OnInit {
-  open = false;
+  open = true;
+  tweets = [{}, {}, {}, {}];
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggle = () => {
+    this.open = !this.open;
   }
 
 }

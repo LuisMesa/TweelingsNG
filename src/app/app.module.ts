@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TweelingComponent } from './tweeling/tweeling.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TweelingComponent
+    TweelingComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule
@@ -17,4 +19,5 @@ import { TweelingComponent } from './tweeling/tweeling.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

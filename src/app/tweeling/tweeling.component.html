@@ -1,14 +1,8 @@
-<div class="Tweeling">
-  <div class="result">
+<div class="Tweeling" [ngClass]="open?'open':'close'">
+  <div class="result" (click)="toggle()">
 
   </div>
-  <div class="tweets">
-    <div class="tweet">
-
-    </div>
-    <div class="tweet">
-
-    </div>
-
+  <div class="tweets" *ngIf="open">
+    <app-tweet *ngFor="let tweet of tweets"></app-tweet>
   </div>
 </div>
