@@ -1,9 +1,24 @@
 <div class="App">
-  <div class="title">
-    <h1>Tweelings!</h1>
+  <div class="titleContainer">
+    <div class="title">Tweelings</div>
+    <div class="subtitle"><span>with </span> Angular</div>
   </div>
-  <div class="tweelingsContainer">
-    <app-tweeling *ngFor="let t of favTweelings"></app-tweeling>
+  <div class="inputContainer">
+    <input placeholder='Search...' [(ngModel)]="input" (keypress)="onKeyPress($event)" spellcheck="false"/>
+    <span class='input-highlight'>{{getInputHighLigth()}}</span>
+  </div>
+  <div class="tweelingsContainer" *ngIf="!loading">
+    <ng-container *ngIf="!tweeling">
+      <app-tweeling *ngFor="let t of favTweelings" [Tweeling]="t" [open]="false"></app-tweeling>
+    </ng-container>
+    <ng-container *ngIf="tweeling">
+      <app-tweeling [Tweeling]="tweeling"></app-tweeling>
+    </ng-container>
+  </div>
+  <div class="container" *ngIf="loading">
+    <div class="dot dot-1"></div>
+    <div class="dot dot-2"></div>
+    <div class="dot dot-3"></div>
   </div>
 </div>
 

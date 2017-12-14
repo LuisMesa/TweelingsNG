@@ -1,7 +1,64 @@
+$roboto: Roboto Slab, sans-serif
+
+
 .App
-  .title
-    text-align: center
+  .titleContainer
+    display: flex
+    flex-direction: column
+    align-items: center
+    .title
+      font-family: $roboto
+      font-size: 6vw
+      text-align: center
+      width: 30vw
+      color: #333333
+      padding-right: 1vw
+    .subtitle
+      font-family: 'Open Sans', sans-serif
+      text-align: right
+      width: 30vw
+      font-style: italic
+      font-size: 1.5vw
+      span
+        font-size: 1vw
+        color: #333333
   .tweelingsContainer
-    margin-top: 10vh
+    margin-top: 5vh
     display: flex
     justify-content: space-around
+  .inputContainer
+    $input-font-size: 30px
+    $input-line-height: 70px
+    position: relative
+    width: 35vw
+    margin: 8vh auto
+    .input-highlight
+      font-size: $input-font-size
+      user-select: none
+      line-height: $input-line-height
+      border-top: 3px solid white
+      position: absolute
+      left: 0
+      bottom: 0
+      max-width: 100%
+      height: 0
+      color: transparent
+      font-family: $roboto
+      overflow: hidden
+    input
+      height: 60px
+      width: 100%
+      min-width: 100%
+      padding: 0
+      border-radius: 0
+      line-height: $input-line-height
+      background-color: transparent
+      color: #333333
+      font-size: $input-font-size
+      border: none
+      outline: none
+      border-bottom: 3px solid #333333
+      font-family: $roboto
+      &:focus
+        + .input-highlight
+          border-top: 3px solid #00BFA5

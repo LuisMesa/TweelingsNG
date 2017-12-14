@@ -8,15 +8,15 @@
     background-color: #FFF;
     padding: 0 10px;
     overflow-y: scroll;
+    overflow-x: hidden;
     min-height: 45vh; }
 
 .Tweeling.open {
   width: 40vw;
   grid-template-columns: 16vw 24vw;
   grid-template-rows: 45vh; }
-  .Tweeling.open .result {
-    grid-column: 1/2;
-    background: linear-gradient(75deg, #00E39F, #00C4E1); }
+  .Tweeling.open .Result {
+    grid-column: 1/2; }
   .Tweeling.open .tweets {
     grid-column: 2/3; }
 
@@ -24,8 +24,7 @@
   width: 20vw;
   grid-template-columns: 20vw;
   grid-template-rows: 45vh; }
-  .Tweeling.close .result {
-    grid-column: 1/2;
-    background: linear-gradient(75deg, #00E39F, #00C4E1); }
+  .Tweeling.close .Result {
+    grid-column: 1/2; }
 
 /*# sourceMappingURL=tweeling.component.css.map */

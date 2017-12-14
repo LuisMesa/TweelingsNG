@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tweeling',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tweeling.component.css']
 })
 export class TweelingComponent implements OnInit {
+  @Input()
+  Tweeling = {tweets: [], tones: []};
+  @Input()
   open = true;
-  tweets = [{}, {}, {}, {}];
   constructor() { }
 
   ngOnInit() {

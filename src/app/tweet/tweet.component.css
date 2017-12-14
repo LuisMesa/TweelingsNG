@@ -1,6 +1,7 @@
 .Tweet {
   width: 100%;
-  min-height: 10vh;
+  max-width: 100%;
+  min-height: 8vh;
   border-bottom: solid 1px #ddd;
   display: grid;
   grid-template-rows: 100%;

@@ -1,0 +1,54 @@
+.Result {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 55% 30% 15%;
+  background: linear-gradient(75deg, #00E39F, #00C4E1);
+  color: #fafafa; }
+  .Result .query {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    width: 100%;
+    font-family: Roboto Slab, sans-serif;
+    font-size: 1.5vw;
+    text-align: center; }
+  .Result .tone {
+    text-align: center; }
+    .Result .tone .score {
+      font-family: "Gruppo", cursive; }
+    .Result .tone .name {
+      font-family: "Open Sans", sans-serif; }
+  .Result .tone.item0 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    margin-top: 4vh; }
+    .Result .tone.item0 .score {
+      font-size: 7vw; }
+    .Result .tone.item0 .name {
+      font-size: 1vw; }
+  .Result .tone.item1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-bottom: 2vh; }
+    .Result .tone.item1 .score {
+      font-size: 3vw; }
+    .Result .tone.item1 .name {
+      font-size: 0.7vw; }
+  .Result .tone.item2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-bottom: 2vh; }
+    .Result .tone.item2 .score {
+      font-size: 3vw; }
+    .Result .tone.item2 .name {
+      font-size: 0.7vw; }
+
+.Result.Anger {
+  background: linear-gradient(to right, #ff6a00, #ee0979); }
+
+.Result.Sadness {
+  background: linear-gradient(to right, #2c3e50, #4ca1af); }
+
+/*# sourceMappingURL=result.component.css.map */

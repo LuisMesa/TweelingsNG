@@ -12,6 +12,7 @@ $height: 45vh
     background-color: #FFF
     padding: 0 10px
     overflow-y: scroll
+    overflow-x: hidden
     min-height: $height
 
 .Tweeling.open
@@ -19,9 +20,8 @@ $height: 45vh
   width: $width
   grid-template-columns: $width*2/5 $width*3/5
   grid-template-rows: $height
-  .result
+  .Result
     grid-column: 1/2
-    background: linear-gradient(75deg, #00E39F, #00C4E1)
   .tweets
     grid-column: 2/3
 
@@ -30,6 +30,5 @@ $height: 45vh
   width: $width
   grid-template-columns: $width
   grid-template-rows: $height
-  .result
+  .Result
     grid-column: 1/2
-    background: linear-gradient(75deg, #00E39F, #00C4E1)
