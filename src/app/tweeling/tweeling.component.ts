@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TweelingComponent implements OnInit {
   @Input()
-  Tweeling = {tweets: [], tones: []};
+  Tweeling = {tweets: [], tones: [], query: ''};
   @Input()
   open = true;
   constructor() { }
