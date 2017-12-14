@@ -56,4 +56,32 @@
     .App .inputContainer input:focus + .input-highlight {
       border-top: 3px solid #00BFA5; }
 
+@media screen and (max-width: 500px) {
+  .App .titleContainer {
+    margin-top: 5vh; }
+    .App .titleContainer .title {
+      font-size: 15vw;
+      width: 70vw;
+      padding-right: 2vw; }
+    .App .titleContainer .subtitle {
+      width: 70vw;
+      font-size: 4vw; }
+      .App .titleContainer .subtitle span {
+        font-size: 3vw; }
+  .App .tweelingsContainer {
+    justify-content: space-around;
+    height: 90vh;
+    align-items: center;
+    flex-direction: column; }
+  .App .inputContainer {
+    position: relative;
+    width: 50vw; }
+    .App .inputContainer .input-highlight {
+      font-size: 20px;
+      line-height: 30px; }
+    .App .inputContainer input {
+      height: 40px;
+      line-height: 30px;
+      font-size: 20px; } }
+
 /*# sourceMappingURL=app.component.css.map */
