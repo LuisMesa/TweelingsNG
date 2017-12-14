@@ -7,7 +7,8 @@
   grid-template-rows: 55% 30% 15%;
   font-family: "Gruppo", cursive;
   background: linear-gradient(75deg, #00E39F, #00C4E1);
-  color: #fafafa; }
+  color: #fafafa;
+  cursor: pointer; }
   .Result .query {
     grid-row: 3/4;
     grid-column: 1/3;
