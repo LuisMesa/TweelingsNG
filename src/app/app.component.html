@@ -9,7 +9,7 @@
   </div>
   <div class="tweelingsContainer" *ngIf="!loading" [ngClass]="tweeling?'one':'multiple'">
     <ng-container *ngIf="!tweeling">
-      <app-tweeling *ngFor="let t of favTweelings" [Tweeling]="t" [open]="false"></app-tweeling>
+      <app-tweeling *ngFor="let t of favTweelings" [Tweeling]="t" (emitter)="closeOthers($event)" ></app-tweeling>
     </ng-container>
     <ng-container *ngIf="tweeling">
       <app-tweeling [Tweeling]="tweeling"></app-tweeling>

@@ -1,6 +1,6 @@
-<div class="Tweeling" [ngClass]="open?'open':'close'">
+<div class="Tweeling" [ngClass]="Tweeling.open?'open':'close'">
   <app-result class="Result" [tones]="Tweeling.tones" [query]="Tweeling.query" (click)="toggle()"></app-result>
-  <div class="tweets" *ngIf="open">
+  <div class="tweets" *ngIf="Tweeling.open">
     <app-tweet *ngFor="let tweet of Tweeling.tweets" [tweet]="tweet"></app-tweet>
   </div>
 </div>

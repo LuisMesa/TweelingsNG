@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-tweeling',
@@ -7,16 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TweelingComponent implements OnInit {
   @Input()
-  Tweeling = {tweets: [], tones: [], query: ''};
-  @Input()
-  open = true;
-  constructor() { }
+  Tweeling = {tweets: [], tones: [], query: '', open: false};
+  @Output()
+  emitter = new EventEmitter<{ query: string }>();
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   toggle = () => {
-    this.open = !this.open;
+    this.Tweeling.open = !this.Tweeling.open;
+    if (this.Tweeling.open) {
+      this.emitter.emit({query: this.Tweeling.query});
+    }
   }
 
 }
