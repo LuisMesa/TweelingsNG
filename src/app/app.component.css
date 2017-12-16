@@ -70,9 +70,12 @@
         font-size: 3vw; }
   .App .tweelingsContainer {
     justify-content: space-around;
-    height: 90vh;
     align-items: center;
     flex-direction: column; }
+  .App .tweelingsContainer.one {
+    height: 50vh; }
+  .App .tweelingsContainer.multiple {
+    height: 90vh; }
   .App .inputContainer {
     position: relative;
     width: 50vw; }

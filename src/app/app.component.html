@@ -7,7 +7,7 @@
     <input placeholder='Search...' [(ngModel)]="input" (keypress)="onKeyPress($event)" spellcheck="false"/>
     <span class='input-highlight'>{{getInputHighLigth()}}</span>
   </div>
-  <div class="tweelingsContainer" *ngIf="!loading">
+  <div class="tweelingsContainer" *ngIf="!loading" [ngClass]="tweeling?'one':'multiple'">
     <ng-container *ngIf="!tweeling">
       <app-tweeling *ngFor="let t of favTweelings" [Tweeling]="t" [open]="false"></app-tweeling>
     </ng-container>
