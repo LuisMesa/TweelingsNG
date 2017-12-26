@@ -34,41 +34,6 @@ $height: 45vh
     grid-column: 1/2
 
 @media screen and (max-width: 500px)
-  $height: 30vh
-  $openWidth : 70vw
-  $closeWidth : 40vw
-  .Tweeling
-    height: $height
-    display: grid
-    border-radius: 4px
-    overflow: hidden
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2)
-    .tweets
-      background-color: #FFF
-      padding: 0 10px
-      overflow-y: scroll
-      overflow-x: hidden
-      min-height: $height
-
-  .Tweeling.open
-    $width: $openWidth
-    width: $width
-    grid-template-columns: $width*2/5 $width*3/5
-    grid-template-rows: $height
-    .Result
-      grid-column: 1/2
-    .tweets
-      grid-column: 2/3
-
-  .Tweeling.close
-    $width: $closeWidth
-    width: $width
-    grid-template-columns: $width
-    grid-template-rows: $height
-    .Result
-      grid-column: 1/2
-
-@media screen and (max-width: 500px)
   $openWidth : 80vw
   $closeWidth : 40vw
   $height: 25vh

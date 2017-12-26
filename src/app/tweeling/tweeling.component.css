@@ -29,35 +29,6 @@
 
 @media screen and (max-width: 500px) {
   .Tweeling {
-    height: 30vh;
-    display: grid;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); }
-    .Tweeling .tweets {
-      background-color: #FFF;
-      padding: 0 10px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      min-height: 30vh; }
-
-  .Tweeling.open {
-    width: 70vw;
-    grid-template-columns: 28vw 42vw;
-    grid-template-rows: 30vh; }
-    .Tweeling.open .Result {
-      grid-column: 1/2; }
-    .Tweeling.open .tweets {
-      grid-column: 2/3; }
-
-  .Tweeling.close {
-    width: 40vw;
-    grid-template-columns: 40vw;
-    grid-template-rows: 30vh; }
-    .Tweeling.close .Result {
-      grid-column: 1/2; } }
-@media screen and (max-width: 500px) {
-  .Tweeling {
     height: 25vh; }
     .Tweeling .tweets {
       min-height: 25vh; }
